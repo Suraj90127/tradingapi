@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 dotenv.config();
 connectDB();
 
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 

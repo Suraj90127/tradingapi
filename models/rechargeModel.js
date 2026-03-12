@@ -24,7 +24,7 @@ const rechargeSchema = new mongoose.Schema({
     },
     by: { 
     type: String, 
-    default: "zapcore"
+    default: "trendingapis"
     },
     utr: {
      type: String,
