@@ -232,13 +232,7 @@ export const lunchGameValidate = async (req, res, next) => {
 
     // console.log("requestIp",requestIp);
     
-
-    if (!validateIp(user.ipv4_address, requestIp)) {
-        return res.status(403).json({
-          status:false,
-          message:`Your IP address ${requestIp} is not whitelisted`
-        });
-      }
+a
 
   // if (user.balance)
 

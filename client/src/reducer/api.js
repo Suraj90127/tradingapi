@@ -12,11 +12,15 @@ export const api = axios.create({
   // },
 });
 
-// Token interceptor
-// api.interceptors.request.use((config) => {
-//   const token = localStorage.getItem("token");
-//   if (token) {
-//     config.headers.Authorization = `Bearer ${token}`;
-//   }
-//   return config;
-// });
+api.interceptors.request.use((config) => {
+  // Add domain header
+  config.headers['x-domain'] = window.location.hostname;
+  // config.headers['x-domain'] = 'api-docs.space';
+  
+  // Add internal request header to bypass IP validation for docs
+  config.headers['x-internal-request'] = 'true';
+  
+  console.log('Request headers:', config.headers); // Debug log
+  
+  return config;
+});
