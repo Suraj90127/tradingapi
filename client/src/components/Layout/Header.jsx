@@ -7,7 +7,8 @@ import {
   FiTrendingUp, FiStar, FiHeart, FiSettings,
   FiShield, FiHelpCircle, FiX, FiEye,
   FiTrash2, FiPackage, FiCheck,
-  FiFileText
+  FiFileText,
+  FiUsers
 } from 'react-icons/fi';
 import { GiCricketBat, GiGamepad, GiWallet } from 'react-icons/gi';
 import { SiPrdotco } from 'react-icons/si';
@@ -98,8 +99,12 @@ const Header = () => {
     
     { path: '/providers', label: 'Providers', icon: <SiPrdotco className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
     { path: '/games', label: 'Games', icon: <GiGamepad className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
+    { path: '/accessproviders', label: 'Access Provider', icon: <MdOutlineAccountCircle className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
     { path: '/cricket', label: 'Cricket', icon: <GiCricketBat className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
-    // { path: '/docs', label: 'Docs', icon: <FiFileText className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
+    { path: '/deposit-history', label: 'Deposit History', icon: <GiGamepad className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
+    { path: '/bet-history', label: 'Bet History', icon: <FiUsers className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
+    { path: '/gg-history', label: 'GGR History', icon: <SiPrdotco className="w-4 h-4 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]" /> },
+  
  
   ];
 
@@ -453,9 +458,7 @@ const Header = () => {
                     <button className="flex-1 py-2 px-3 bg-white/20 hover:bg-white/30 text-white text-sm font-semibold rounded-lg transition">
                       Deposit
                     </button>
-                    <button className="flex-1 py-2 px-3 bg-white/20 hover:bg-white/30 text-white text-sm font-semibold rounded-lg transition">
-                      Withdraw
-                    </button>
+                 
                   </div>
                 </div>
 
