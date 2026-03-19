@@ -111,8 +111,6 @@ const Header = () => {
   const userMenu = [
     { label: 'Profile', path: '/profile', icon: <FiUser className="w-4 h-4" /> },
     { label: 'Deposit', path: '/deposit', icon: <GiWallet className="w-4 h-4" /> },
-    // { label: 'Settings', path: '/settings', icon: <FiSettings className="w-4 h-4" /> },
-    // { label: 'Help', path: '/help', icon: <FiHelpCircle className="w-4 h-4" /> },
   ];
 
   const isActive = (path) => location.pathname === path;
