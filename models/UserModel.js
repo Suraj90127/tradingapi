@@ -8,13 +8,13 @@ const userSchema = new mongoose.Schema(
             type: String, 
             required: true 
         },
-        by: { 
-         type: String, 
-        default:"trendingapis"
-        },
         prefix: { 
             type: String, 
             required: true 
+        },
+         by: { 
+        type: String, 
+        default:"zapcore"
         },
         email: { 
             type: String, 
@@ -73,6 +73,10 @@ const userSchema = new mongoose.Schema(
         user_ggr:{
             type:Number
         },
+        ggr_coust:{
+            type:Number,
+            default:12
+        },
         todaybet:{
             type:Number
         },
@@ -85,11 +89,11 @@ const userSchema = new mongoose.Schema(
         },
         isdemo:{
             type:Number,
-            deflate:0
+            default:0
         },
         isActive:{
             type:Number,
-            deflate:0
+            default:0
         },
         ggrupdatedate:{
             type:Date,
