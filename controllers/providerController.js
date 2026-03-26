@@ -247,7 +247,7 @@ export const getActiveProviders = async (req, res) => {
 
     return res.status(200).json({
       status: true,
-      providers: activeProviders,
+      providers: access.providers,
     });
   } catch (error) {
     console.error("getActiveProviders error:", error);
